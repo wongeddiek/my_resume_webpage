@@ -54,9 +54,27 @@ h2 {
 
 .list-icons {
   font-size: 3rem;
-  .list-inline-item i {
-    &:hover {
+  height: 75px;
+  .list-inline-item {
+    min-width: 73px;
+    height: 75px;
+    i {
+      display: block;
+    }
+
+    &:hover i {
+      font-size: 2rem;
+      display: block;
       color: $primary;
     }
+    &:hover .icon-name {
+      display: block;
+    }
   }
+}
+
+.icon-name {
+  font-size: 1rem;
+  color: $primary;
+  display: none;
 }
